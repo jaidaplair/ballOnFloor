@@ -15,6 +15,12 @@ public class PlaceMe : MonoBehaviour
 
         Vector3 myPosition = new Vector3(x, y, 0f);
         transform.position = myPosition;
+
+        Rigidbody2D ballRigidBody = GetComponent<Rigidbody2D>();//get rigid body2d component for ball
+        ballRigidBody.velocity = new Vector2(3, 4);
+
+        //SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+       // spriteRenderer.color = Color.red;
     }
 
     // Update is called once per frame
